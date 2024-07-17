@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="res_partner_inherit_view_form" model="ir.ui.view">
+        <field name="name">res.partner.inherit.view.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="Social Networks" string="Social Networks">
+                    <group name="container_row_2">
+                        <group string="Basic Info" name="Basic Info" priority="1">
+                            <field name="followers"/>
+                            <field name="following"/>
+                            <button name="compute_sum_followers" type="object" string="+followers"/>
+                        </group>
+                        <group string="Activity Details" name="Activity Details" priority="2">
+                            <field name="last_post_date"/>
+                            <field name="post_count"/>
+                            <field name="likes_recieved"/>
+                            <field name="comments_received"/>
+                        </group>
+                        <group string="Profile Link" name="Profile Link" priority="3">
+                            <field name="social_media_profile_link"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+ 

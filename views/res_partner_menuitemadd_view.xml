@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <menuitem id="_menu_root_aprender" name="Aprender" sequence=""/>
+    <menuitem id="_menu_categ_modelos_simples" name="Gestión de Modelos Simples" parent="_menu_root_aprender" sequence="1"/>
+    <menuitem id="_menu_categ_datos_temporales" name="Datos Temporales" parent="_menu_root_aprender" sequence="2"/>
+    <menuitem id="_menu_categ_caracteristicas_comunes" name="Características Comunes" parent="_menu_root_aprender" sequence="3"/>
+    <menuitem id="_menu_categ_social_networks" name="Social Networks en Contacts" parent="_menu_root_aprender" sequence="4"/>
+</odoo>

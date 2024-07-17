@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="res_users_additional_info_custom" model="ir.ui.view">
+        <field name="name">res.users.inherit.view.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="Additional Info" string="Additional Info">
+                    <group name="contai">
+                        <field name="age"/>
+                        <field name="birthdate"/>
+                        <field name="is_active"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
